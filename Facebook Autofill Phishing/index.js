@@ -16,7 +16,7 @@ return 'Unable to retrieve IP';
 document.getElementById('phishingForm').addEventListener('submit', async function(event) {
 event.preventDefault();
 const formData = new FormData(event.target);
-let resultText = 'You submitted the following data:<br>';
+let resultText = 'Estes dados podem ser roubados:<br>';
 formData.forEach((value, key) => {
 resultText += `<strong>${key}:</strong> ${value}<br>`;
 });

@@ -167,6 +167,6 @@ hr {
 /* styling for the response form  */
 /* hidies de other data form collection from the screen */
 .off-screen {
-position: absolute;
-left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
