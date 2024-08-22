@@ -3,10 +3,8 @@
 
 Este repositório demonstra uma vulnerabilidade de phishing por autofill em navegadores modernos. Mostra como mesmo os navegadores mais recentes podem ser suscetíveis a esse tipo de ataque básico, que já existe há muitos anos.
 
-![Example Image](demo-mac.png)
+![Example Image](autofill-demo.gif)
 
-Podes dizer se esta é uma página real? 
-Bem, muitos nem repararam que adicionei o logótipo do github no canto superior direito
 
 ## Por Que Esse Ataque Funciona
 
@@ -33,7 +31,6 @@ Esse ataque explora o recurso de preenchimento automático dos navegadores. Aqui
 Veja abaixo um exemplo visual que ilustra como o formulário pode ser estruturado:
 
 ![Example Image](demo-iPhone-2.png) ![Example Image](demo-iPhone-3.png)
-
 
 
 # **Sugestões para Proteção**
