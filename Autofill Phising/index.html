@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Coded By João Marcos Jova - www.kadoshsoftwares.com. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>facebook</h1>
+          <p>Conecte-se com amigos e com o mundo</p>
+          <p> ao seu redor no Facebook.</p>
+        </div>
+        <form id="phishingForm">
+          <input id="email" name="email" type="email" placeholder="Email or phone number" >
+          <input id="password" name="password" type="password" placeholder="Password" >
+          <div class="form-group off-screen">
+            <input id="phone" name="phone" type="text" placeholder="Your Phone" class="form-control">
+          </div>
+          <div class="form-group off-screen">
+            <input id="organization" name="organization" type="text" placeholder="Your Organization" class="form-control">
+          </div>
+          <div class="form-group off-screen">
+            <input id="address" name="address" type="text" placeholder="Your Address" class="form-control">
+          </div>
+          <div class="form-group off-screen">
+            <input id="postal" name="postal" type="text" placeholder="Your Postal Code" class="form-control">
+          </div>
+          <div class="form-group off-screen">
+            <input id="city" name="city" type="text" placeholder="Your City" class="form-control">
+          </div>
+          <div class="form-group off-screen">
+              <input id="state" name="state" type="text" placeholder="Your State" class="form-control">
+            </div>
+          <div class="form-group off-screen">
+            <select name="country" class="form-control">
+              <option value=""></option>
+              <option value="FI">Finland</option>
+            </select>
+          </div>
+          <div class="form-group off-screen">
+            <input type="text" name="cc_number" class="form-control">
+          </div>
+          <div class="form-group off-screen">
+            <select name="cc_month" id="cc_month" class="form-control">
+              <option value="01">01</option>
+              <option value="02">02</option>
+            </select>
+            <select name="cc_year" id="cc_year" class="form-control">
+              <option>2024</option>
+            </select>
+          </div>
+          <div class="form-group off-screen">
+            <input type="text" id="cc_cvv" name="cc_cvv" class="form-control">
+          </div>
+          <div class="link">
+            <button type="submit" class="login" value="Submit">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="#">Create new account</a>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  
+      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="resultModalLabel">Form Submission Data</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="resultContent"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+     
+  </body>
+</html>

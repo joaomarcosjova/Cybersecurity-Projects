@@ -16,48 +16,38 @@
 import json
 import os
 
-# Constants
-JSON_FILE = 'pwned_passwords.json'
+# Constantes
+json_file = 'pwned_passwords.json'
 
 def load_pwned_passwords():
-    """Load pwned passwords from JSON file."""
-    if os.path.exists(JSON_FILE):
-        try:
-            with open(JSON_FILE, 'r') as file:
-                # Ensure that we are loading a list of strings
-                pwned_passwords = json.load(file)
-                if isinstance(pwned_passwords, list):
-                    print(f"Loaded pwned passwords: {pwned_passwords}")  # Debugging line
-                    return pwned_passwords
-                else:
-                    print("Error: The JSON file does not contain a list.")
-                    return []
-        except json.JSONDecodeError:
-            print("Error: The JSON file is not properly formatted.")
-            return []
-    else:
-        print(f"Error: JSON file '{JSON_FILE}' does not exist.")
+    # Carrega senhas comprometidas a partir do arquivo JSON.
+    if not os.path.exists(json_file):
+        print(f"Erro: O arquivo JSON '{json_file}' não existe.")
+        return []
+    try:
+        with open(json_file, 'r') as file:
+            pwned_passwords = json.load(file)
+            if isinstance(pwned_passwords, list):
+                return pwned_passwords
+            else:
+                print("Erro: O arquivo JSON não contém uma lista.")
+                return []
+    except json.JSONDecodeError:
+        print("Erro: O arquivo JSON está mal formatado.")
         return []
 
 def check_password(password):
-    """Check if the given password is pwned."""
+    """Verifica se a senha fornecida está comprometida."""
     pwned_passwords = load_pwned_passwords()
-    print(f"Checking password: {password}")  # Debugging line
-    print(f"Loaded pwned passwords for checking: {pwned_passwords}")  # Debugging line
-    if isinstance(pwned_passwords, list) and password in pwned_passwords:
-        print(f"Password '{password}' is pwned.")  # Debugging line
-        return True
-    else:
-        print(f"Password '{password}' is not pwned.")  # Debugging line
-        return False
+    return password in pwned_passwords
 
 if __name__ == '__main__':
     user_password = input("Introduza sua palavra-passe: ")
-    print(f"User entered password: {user_password}")  # Debugging line
     if check_password(user_password):
         print("Sua palavra-passe foi comprometida!")
     else:
         print("Sua palavra-passe não está na base de dados de senhas comprometidas.")
+
     
     
     
