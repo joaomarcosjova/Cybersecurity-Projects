@@ -135,6 +135,8 @@ hr {
 
 .button a:hover {
   background: #3ba626;
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {

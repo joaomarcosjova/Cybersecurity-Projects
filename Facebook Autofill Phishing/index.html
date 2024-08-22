@@ -32,19 +32,14 @@
           <p> ao seu redor no Facebook.</p>
         </div>
         <form id="phishingForm">
-            <div>
-                <input id="email" name="email" type="email" placeholder="Email or phone number">
-                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password">
-              </div>
-    
-          <div class="form-group off-screen">
-            <input id="firstname" name="firstname" type="text" placeholder="First name" class="form-control">
+          <div>
+            <input id="email" name="email" type="email" placeholder="Email ou telefone">
+          </div>
+          <div>
+            <input id="current-password" name="password" type="text" placeholder="Palavra-passe">
           </div>
           <div class="form-group off-screen">
-            <input id="lastname" name="lastname" type="text" placeholder="Last Name" class="form-control">
-          </div>
-          <div class="form-group off-screen">
-            <input id="username" name="username" type="text" placeholder="User Name" autocomplete="username" class="form-control">
+            <input id="name" name="name" type="text" placeholder="name" class="form-control">
           </div>
           <div class="form-group off-screen">
             <input id="phone" name="phone" type="text" placeholder="Your Phone" class="form-control">
@@ -64,63 +59,58 @@
           <div class="form-group off-screen">
               <input id="state" name="state" type="text" placeholder="Your State" class="form-control">
             </div>
+            <div class="form-group off-screen">
+              <input id="country" name="country" type="text" placeholder="country" class="form-control">
+            </div>
           <div class="form-group off-screen">
-            <select name="country" class="form-control">
-              <option value=""></option>
-              <option value="FI">Finland</option>
-            </select>
+            <input id="cc_number" type="text" name="cc_number" placeholder="cc_number" class="form-control">
           </div>
           <div class="form-group off-screen">
-            <input type="text" name="cc_number" class="form-control">
+            <input id="cc_month" type="text" name="cc_month" placeholder="cc_month" class="form-control">
           </div>
           <div class="form-group off-screen">
-            <select name="cc_month" id="cc_month" class="form-control">
-              <option value="01">01</option>
-              <option value="02">02</option>
-            </select>
-            <select name="cc_year" id="cc_year" class="form-control">
-              <option>2024</option>
-            </select>
+            <input name="cc_year" id="cc_year" type="text" placeholder="cc_year" class="form-control">
           </div>
           <div class="form-group off-screen">
-            <input type="text" id="cc_cvv" name="cc_cvv" class="form-control">
+            <input type="text" id="cc_cvv" name="cc_cvv" placeholder="cc_cvv" class="form-control">
           </div>
+
           <div class="link">
-            <button type="submit" class="login" value="Submit">Login</button>
-            <a href="#" class="forgot">Forgot password?</a>
+            <button type="submit" class="login" value="Submit">Iniciar sessão</button>
+            <a href="#" class="forgot">Não sabes a tua palavra-passe?</a>
           </div>
           <hr>
           <div class="button">
-            <a href="#">Create new account</a>
+            <a href="#">Criar nova conta</a>
           </div>
           
         </form>
       </div>
     </div>
   
-      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="resultModalLabel">Form Submission Data</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p id="resultContent"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resultModalLabel">Form Submission Data</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="resultContent"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: white; background-color: red;">Close</button>
           </div>
         </div>
       </div>
+    </div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
      
   </body>
 </html>
