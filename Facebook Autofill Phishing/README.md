@@ -3,7 +3,10 @@
 
 Este repositório demonstra uma vulnerabilidade de phishing por autofill em navegadores modernos. Mostra como mesmo os navegadores mais recentes podem ser suscetíveis a esse tipo de ataque básico, que já existe há muitos anos.
 
-![Exemplo de Phishing por Autofill](Facebook Autofill Phishing\demo-web.mp4)
+![Example Image](demo-mac.png)
+
+Podes dizer se esta é uma página real? 
+Bem, muitos nem repararam que adicionei o logótipo do github no canto superior direito
 
 ## Por Que Esse Ataque Funciona
 
@@ -11,6 +14,10 @@ Muitos navegadores modernos oferecem recursos de preenchimento automático para 
 
 - **Campos Ocultos**: Os atacantes podem ocultar campos de entrada em uma página da web, que são preenchidos automaticamente sem o conhecimento do usuário.
 - **Confiança no Preenchimento Automático**: Os usuários costumam confiar que o preenchimento automático só preencherá campos visíveis, sem saber que campos ocultos também podem ser preenchidos.
+
+<div style="text-align: center;">
+  <img src="hacked.webp" alt="Example Image" width="50%"/>
+</div>
 
 ## Como Esse Ataque Funciona
 
@@ -25,52 +32,65 @@ Esse ataque explora o recurso de preenchimento automático dos navegadores. Aqui
 
 Veja abaixo um exemplo visual que ilustra como o formulário pode ser estruturado:
 
-![Exemplo de Phishing por Autofill](https://github.com/0dayCTF/Autofill_Danger/assets/44453666/ab888f01-8413-4553-a413-73b75751adca)
+![Example Image](demo-iPhone-1.png) ![Example Image](demo-iPhone-2.png) ![Example Image](demo-iPhone-3.png)
 
-## Tecnologias Utilizadas
 
-Aqui estão as principais tecnologias usadas para criar o exemplo de phishing por autofill:
 
-- **HTML**
-  ![HTML Logo](https://img.icons8.com/ios/50/000000/html-5.png)
-  
-- **CSS**
-  ![CSS Logo](https://img.icons8.com/ios/50/000000/css3.png)
-  
-- **JavaScript**
-  ![JavaScript Logo](https://img.icons8.com/ios/50/000000/javascript.png)
-  
-- **Netlify**
-  ![Netlify Logo](https://img.icons8.com/ios/50/000000/netlify.png)
+# **Sugestões para Proteção**
 
-## Referências
+### 1. Verifique o URL do Site
 
-Inspirado por Viljami Kuosmanen - [GitHub](https://github.com/anttiviljami/browser-autofill-phishing)
+- **Certifique-se de que está no site correto**: Sempre verifique a URL do site antes de inserir informações pessoais. Confirme que está visitando o site legítimo e que a URL é segura (`https://`).
 
----
+### 2. Use Navegadores Atualizados
 
-### Explicação dos Componentes
+- **Atualize seu navegador**: Mantenha seu navegador atualizado para garantir que você tenha as últimas correções de segurança. Navegadores atualizados ajudam a proteger contra vulnerabilidades conhecidas.
 
-#### **1. Formulário Web Criado**
-O atacante cria um formulário com campos de entrada visíveis e ocultos. Os campos ocultos são estilizados para não serem visíveis ao usuário, mas ainda assim são preenchidos pelo navegador.
+### 3. Desative o Preenchimento Automático para Sites Não Confiáveis
 
-#### **2. Interação do Usuário**
-O usuário interage apenas com os campos visíveis, sem perceber que há campos ocultos na mesma página.
+- **Desative autofill**: Em configurações do navegador, você pode desativar a função de preenchimento automático para campos de formulários, especialmente para sites que não são de sua confiança.
 
-#### **3. Acionamento do Preenchimento Automático**
-Quando o navegador preenche automaticamente os campos do formulário com dados salvos (como e-mail, nome, etc.), ele preenche também os campos ocultos, que capturam essas informações sem que o usuário perceba.
+  - **Google Chrome**:
+    1. Vá para **Configurações**.
+    2. Selecione **Senhas e Formulários**.
+    3. Clique em **Senhas** e desative a opção de salvar senhas.
 
-#### **4. Extração**
-Os dados preenchidos nos campos ocultos são enviados para o servidor controlado pelo atacante, geralmente através de uma requisição de formulário ou via JavaScript.
+  - **Mozilla Firefox**:
+    1. Vá para **Preferências**.
+    2. Selecione **Privacidade e Segurança**.
+    3. Na seção **Senhas**, desmarque **Perguntar se deve salvar logins e senhas para sites**.
 
-### **Sugestões para Proteção**
+### 4. Use Gerenciadores de Senhas
 
-- **Revisar o HTML**: Sempre verifique o código HTML de páginas em que você insere informações sensíveis.
-- **Desativar Preenchimento Automático**: Desative o preenchimento automático para sites não confiáveis.
-- **Educação e Conscientização**: Esteja ciente de como os formulários são estruturados e como dados podem ser manipulados.
+- **Adote gerenciadores de senhas**: Utilize gerenciadores de senhas confiáveis, como LastPass, 1Password ou Bitwarden. Esses aplicativos ajudam a armazenar e preencher informações de forma segura e também podem detectar sites fraudulentos.
 
-Espero que esta explicação detalhada e o conteúdo adicional ajudem a entender melhor o phishing por autofill e como ele pode afetar a segurança online. Se precisar de mais informações ou tiver dúvidas, sinta-se à vontade para perguntar!
+### 5. Verifique os Campos do Formulário
 
---- 
+- **Evite preencher campos suspeitos**: Se você notar campos estranhos ou ocultos em um formulário, especialmente em sites que não são de sua confiança, não preencha esses campos.
 
-Este documento utiliza ícones para tornar as seções sobre as tecnologias mais visuais e intuitivas. Adapte conforme necessário para o seu público ou objetivo específico.
+### 6. Esteja Atento a Phishing
+
+- **Cuidado com e-mails e mensagens**: Não clique em links ou forneça informações pessoais a partir de e-mails ou mensagens suspeitas. Verifique sempre a autenticidade dos remetentes e das URLs dos links.
+
+### 7. Use a Verificação em Duas Etapas (2FA)
+
+- **Ative 2FA**: Sempre que possível, ative a verificação em duas etapas para suas contas online. Isso adiciona uma camada extra de segurança ao exigir uma segunda forma de autenticação além da senha.
+
+### 8. Monitore Suas Contas
+
+- **Verifique contas regularmente**: Monitore suas contas bancárias e de cartão de crédito para detectar qualquer atividade suspeita ou não autorizada.
+
+
+## 🌐 Redes Sociais
+
+Conecte-se conosco e acompanhe as atualizações do repositório:
+
+- [![Instagram](https://img.shields.io/badge/Instagram-%40j.marcosjova-1DA1F2?logo=Instagram&logoColor=white)](https://Instagram.com/j.marcosjova)
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-%40joaomarcosjova-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joaomarcosjova/)
+
+- [![GitHub](https://img.shields.io/badge/GitHub-%40joaomarcosjova-181717?logo=github&logoColor=white)](https://github.com/joaomarcosjova)
+
+
+Desenvolvido por **João Marcos Jová**.
+
