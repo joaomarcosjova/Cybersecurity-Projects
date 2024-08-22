@@ -32,7 +32,7 @@ Esse ataque explora o recurso de preenchimento automático dos navegadores. Aqui
 
 Veja abaixo um exemplo visual que ilustra como o formulário pode ser estruturado:
 
-![Example Image](demo-iPhone-1.png) ![Example Image](demo-iPhone-2.png) ![Example Image](demo-iPhone-3.png)
+![Example Image](demo-iPhone-2.png) ![Example Image](demo-iPhone-3.png)
 
 
 
